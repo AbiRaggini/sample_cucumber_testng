@@ -27,10 +27,10 @@ public class SignUpPageStepDefinition extends TestBase{
 	public void user_opens_browser() throws Throwable{
 		System.out.println("jjjjjjjj");
 		com.example.TestBase.initialization();
-	    
 	}
 	@io.cucumber.java.en.When("^user is on login page$")
 	public void user_is_on_login_page() {
+		System.out.println("kjjjjjjj");
 		loginpage_obj = new loginPageFB();
 		String title = loginpage_obj.verifyLoginPageTitle();
 		System.out.println(title);

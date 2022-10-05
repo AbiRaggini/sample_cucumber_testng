@@ -11,7 +11,7 @@ import io.cucumber.java.en.When;
 
 public class LoginStepDefs extends BaseClass {
 
-    @Before
+   /* @Before
     public void setup(){
         setDriver();
     }
@@ -19,7 +19,7 @@ public class LoginStepDefs extends BaseClass {
     @After
     public void teardown(){
        closeDriver();
-    }
+    }*/
 
     @Given("Launch Application")
     public void openApplication() {
