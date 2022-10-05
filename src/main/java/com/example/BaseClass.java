@@ -3,6 +3,8 @@ package com.example;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 import java.util.concurrent.TimeUnit;
 
 public class BaseClass {
@@ -10,7 +12,8 @@ public class BaseClass {
     public static WebDriver driver;
 
     public static void setDriver(){
-        System.setProperty("webdriver.chrome.driver","D:\\Drivers\\chromedriver_win32\\chromedriver.exe");
+        WebDriverManager.chromedriver().setup();
+    	//System.setProperty("webdriver.chrome.driver","/Users/menakagandhis/eclipse/sample-cucumber-testng/src/main/resources/chromedriver-3");
         driver = new ChromeDriver();
     }
 

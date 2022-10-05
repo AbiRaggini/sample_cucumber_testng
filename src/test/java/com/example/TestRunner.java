@@ -8,7 +8,7 @@ import io.cucumber.testng.CucumberOptions;
                 "html:target/cucumber-reports/cucumber.html",
                 "json:target/cucumber-reports/cucumber.json"
         },
-        features = {"src/test/resources/features"},
+        features = {"/Users/menakagandhis/eclipse/sample-cucumber-testng/src/test/resources/features/FBSignup.feature"},
         glue = {"com.example.StepDefinitions"},
         tags = "@regression"
 )
